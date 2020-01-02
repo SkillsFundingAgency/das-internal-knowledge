@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+
+
+{% block main %}
+
+{% block content %}
+
+
+<div class="govuk-width-container ">
+	<div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
+	      
+	  <h1 class="govuk-heading-l">Track a ticket status</h1>
+	      
+      {% from "govuk/components/input/macro.njk" import govukInput %}
+
+		{{ govukInput({
+		  label: {
+		    text: "Enter a ticket number"
+		  },
+		  hint: {
+		    text: "Numbers only, 10 digits"
+		  },
+		  classes: "govuk-input--width-10",
+		  id: "width-10",
+		  name: "width-10"
+		}) }}
+		
+		{% from "govuk/components/button/macro.njk" import govukButton %}
+	
+		{{ govukButton({
+		  text: "Search for ticket",
+		  href: "./../timeline"
+		}) }}
+	
+	
+	</div>
+</div>
+
+{% endblock %}
+
+{% endblock %}
