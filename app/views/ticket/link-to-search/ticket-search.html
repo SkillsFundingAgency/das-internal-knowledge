@@ -2,9 +2,22 @@
 
 
 
-{% block main %}
 
 {% block content %}
+
+
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Help",
+      href: "ticket-start"
+    },
+    {
+      text: "search ticket"
+    }
+  ]
+}) }}
 
 
 <div class="govuk-width-container ">
@@ -16,10 +29,10 @@
 
 		{{ govukInput({
 		  label: {
-		    text: "Enter a ticket number"
+		    text: "Enter your ticket number"
 		  },
 		  hint: {
-		    text: "Numbers only, 10 digits"
+		    text: "For example, 502135326"
 		  },
 		  classes: "govuk-input--width-10",
 		  id: "width-10",
@@ -29,7 +42,7 @@
 		{% from "govuk/components/button/macro.njk" import govukButton %}
 	
 		{{ govukButton({
-		  text: "Search for ticket",
+		  text: "Continue",
 		  href: "./../timeline"
 		}) }}
 	
@@ -39,4 +52,3 @@
 
 {% endblock %}
 
-{% endblock %}
