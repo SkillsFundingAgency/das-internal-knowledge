@@ -18,6 +18,24 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 
+//HEADER
+
+
+.home-top__links {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px 20px 25px 20px;
+    background: #0b0c0c;
+    
+    a {
+	    color: #fff;
+    }
+    
+ }
+
 
 /***** CONTACT BOTOM PAGE *****/
 
@@ -309,3 +327,243 @@ input[type="search"] {
 	cursor: pointer;
 	border-radius: 0;
 }
+
+
+
+/* ==========================================================================
+   #TIMELINE
+   ========================================================================== */
+.hmcts-timeline {
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hmcts-timeline:before {
+  background-color: #1d70b8;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 5px;
+}
+
+.hmcts-timeline--full {
+  margin-bottom: 0;
+}
+
+.hmcts-timeline--full:before {
+  height: calc(100% - 75px);
+}
+
+.hmcts-timeline__item {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.hmcts-timeline__item:before {
+  background-color: #1d70b8;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 15px;
+}
+
+.hmcts-timeline__title {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: inline;
+}
+
+@media print {
+  .hmcts-timeline__title {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .hmcts-timeline__title {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .hmcts-timeline__title {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.hmcts-timeline__by {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #6f777b;
+  display: inline;
+  margin: 0;
+}
+
+@media print {
+  .hmcts-timeline__by {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .hmcts-timeline__by {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .hmcts-timeline__by {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.hmcts-timeline__date {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media print {
+  .hmcts-timeline__date {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .hmcts-timeline__date {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .hmcts-timeline__date {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.hmcts-timeline__description {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  margin-top: 20px;
+}
+
+@media print {
+  .hmcts-timeline__description {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .hmcts-timeline__description {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .hmcts-timeline__description {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.hmcts-timeline__documents {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.hmcts-timeline__document-item {
+  margin-bottom: 5px;
+}
+
+.hmcts-timeline__document-item:last-child {
+  margin-bottom: 0;
+}
+
+.hmcts-timeline__document-link {
+  background-image: url(/hmcts-assets/images/icon-document.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 0 50%;
+  padding-left: 25px;
+}
+
+.hmcts-timeline__document-link:focus {
+  color: #0b0c0c;
+}
+
+/* ==========================================================================
+   #END TIMELINE
+   ========================================================================== */
+   
+   .hmrc-timeline {
+  border-left: 3px solid #1d70b8;
+  margin: 0;
+  padding: 0; }
+  .hmrc-timeline-event {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    list-style: none; }
+    @media (min-width: 40.0625em) {
+      .hmrc-timeline-event {
+        padding-bottom: 30px; } }
+    .hmrc-timeline-event:last-child {
+      padding-bottom: 0; }
+  .hmrc-timeline-event-title {
+    margin-bottom: 5px; }
+    @media (min-width: 40.0625em) {
+      .hmrc-timeline-event-title {
+        margin-bottom: 5px; } }
+    .hmrc-timeline-event-title:before {
+      background-color: #1d70b8;
+      content: '';
+      height: 3px;
+      left: 0;
+      top: .5em;
+      position: absolute;
+      width: 12px; }
+  .hmrc-timeline-event-meta {
+    display: block; }
+    
+    
+
+
