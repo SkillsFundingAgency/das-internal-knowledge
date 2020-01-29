@@ -7,16 +7,11 @@
 
 
 
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Help",
-      href: "ticket-start"
-    },
-    {
-      text: "search ticket"
-    }
-  ]
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+  text: "Back",
+  href: "ticket-start"
 }) }}
 
 
@@ -24,7 +19,9 @@
 	<div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
 	      
 	  <h1 class="govuk-heading-l">Track a ticket status</h1>
-	      
+	  
+	  <div class="govuk-!-padding-bottom-6">
+	  
       {% from "govuk/components/input/macro.njk" import govukInput %}
 
 		{{ govukInput({
@@ -45,6 +42,44 @@
 		  text: "Continue",
 		  href: "./../timeline"
 		}) }}
+		
+	  </div>
+		
+		<h2 class="govuk-heading-l">Additional ticket number information</h2>
+		
+		<h3 class="govuk-heading-m">Where you can find your ticket number</h3>
+		
+		<ul class="govuk-list govuk-list--bullet">
+			<li>An email response we may have sent you</li>
+			<li>If contact us via our text service, check your phone SMS messages</li>
+			<li>If you can't find your ticket number give us a Call us on 08000 150 600 (may take longer)</li>
+		</ul>
+				
+		
+		<details>
+
+		  <summary><span class="summary govuk-body" style="color: #005ea5; text-decoration: underline;">If your number isn’t recognised</span></summary>
+		
+		  <div class="panel panel-border-narrow govuk-!-margin-top-6" style=" box-sizing: border-box;
+    clear: both;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-color: #bfc1c3;
+    padding: 0.78947em;
+    margin-bottom: 0.78947em;">
+		
+		    <p class="govuk-body">The ticket number must be:</p>
+				
+				<ul class="govuk-list govuk-list--bullet">
+					<li>Numbers only</li>
+					<li>10 digits long</li>
+					<li>Ticket information is only available for x</li>
+				</ul>
+		
+		  </div>
+		
+		</details>
+		
 	
 	
 	</div>
