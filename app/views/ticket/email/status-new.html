@@ -1,0 +1,209 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Help",
+      href: "link-to-search/ticket-start"
+    },
+    {
+      text: "Check ticket status",
+      href: "link-to-search/ticket-search"
+    },
+    {
+      text: "Your ticket"
+    }
+  ]
+}) }}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl" style="margin-bottom: 10px;">
+        Your ticket #00112233
+      </h1>
+      
+      <ul class="govuk-list">
+	      <li>Status: <strong class="govuk-tag govuk-!-margin-top-4 govuk-!-margin-bottom-2">New</strong></li>
+      </ul>      
+      
+	<ol class="hmrc-timeline">
+				
+		<li class="hmrc-timeline-event">
+			<h2 class="hmrc-timeline-event-title govuk-heading-m">New</h2>
+			<p class="hmrc-timeline-event-meta">
+			<span class="govuk-visually-hidden">Something happened on</span>
+			<time class="hmrc-timeline-event-time" datetime="2019-04-18">22 March 2019</time>
+			</p>	
+		</li>
+		
+	</ol>
+
+      
+      <!-- 
+      <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all"><div class="app-step-nav__controls"></div>
+      <ol class="app-step-nav__steps">
+        
+        
+                
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive">
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 3
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title"><span class="js-step-title-text">Ticket resolved</span></h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph">Today, 13:05</p>
+
+          </div>
+        </li>
+        
+        
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive">
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 2
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title"><span class="js-step-title-text">Ticket updated</span></h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph">13 December 2019, 16:34</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </li>
+        
+        
+        
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive">
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 1
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title"><span class="js-step-title-text">Ticket created</span></h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel" id="step-panel-check-youre-allowed-to-drive-1">
+            <p class="app-step-nav__paragraph">12 December 2019, 11:02</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          </div>
+        </li>
+
+
+
+
+
+        
+      </ol>
+    </div>
+      
+      -->
+            
+      
+    </div>
+</div>
+
+
+
+<section class="app-section">
+  <div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full"> 
+
+        <h2 class="govuk-heading-l">Contact us</h2>
+        <p class="govuk-body">Our opening times are 8am to 8pm, Monday to Friday and 9am to 1pm on Saturday.</p>
+        <div class="das-cards">
+          <div class="das-card app-card">
+            <div class="app-card-inner--grey">
+              <h3 class="govuk-heading-m">Phone</h3>
+              <p class="govuk-body">Call us on 08000 150 600.</p>
+              <p class="govuk-body">Text us on <a href="sms:+442476101117">02476 101 117</a>.</p>
+              <p class="govuk-body">Your phone company may charge you separately, standard SMS rates apply.</p>
+              <p class="govuk-body"><a href="https://www.gov.uk/call-charges" class="govuk-link" target="_blank">Find out about call charges</a>.</p>
+            </div>
+          </div>
+
+          <div class="das-card app-card">
+            <div class="app-card-inner--grey">
+              <h3 class="govuk-heading-m">Email</h3>
+              <p class="govuk-body">Send an email to</p>
+              <p class="govuk-body"><a href="mailto:helpdesk@manage-apprenticeships.service.gov.uk" class="govuk-link">helpdesk@manage-apprenticeships.service.gov.uk</a>.</p>
+              <p class="govuk-body">During our opening times, we’ll reply within 4 hours.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full"> 
+
+        <div class="das-cards">
+          <div class="das-card app-card">
+            <div class="app-card-inner--grey">
+              <h3 class="govuk-heading-m">Webchat</h3>
+              <p class="govuk-body"><a href="#">Speak to an adviser now</a></p>
+              <p class="govuk-body">Outside our opening times you'll be able to leave a message.</p>
+            </div>
+          </div>
+
+          <div class="das-card app-card">
+            <div class="app-card-inner--grey">
+              <h3 class="govuk-heading-m">Send a message</h3>
+	          <p class="govuk-body">You can <a class="submit-a-request govuk-link" role="button" href="/hc/en-gb/requests/new?ticket_form_id=360000235179">send a message</a>.
+	          During our opening times, we’ll reply within 4 hours.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    
+
+  </div>
+</section>
+
+{% endblock %}
+
+	
+
+ticket details
+
+timeline
+
