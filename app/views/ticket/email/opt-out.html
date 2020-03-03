@@ -1,0 +1,46 @@
+<p style="min-height:200px;">Gary</p>
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Help",
+      href: "link-to-search/ticket-start"
+    },
+    {
+      text: "Your ticket preferences"
+    }
+  ]
+}) }}
+
+
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+	
+		<h1 class="govuk-heading-xl" style="margin-bottom: 10px;">
+		 #00112233 Preferences
+		</h1>
+		
+		<p>Would you like to opt out of updates for ticket #00112233?</p>
+		
+		<p>This is just for reminder emails, you will still receive important updates on status changes</p>
+		
+		<p>opt out form here</p>
+	
+	</div>
+</div>
+
+
+
+
+{% endblock %}
+
+	

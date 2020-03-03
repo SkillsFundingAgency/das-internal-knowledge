@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+	
+
+<div class="govuk-phase-banner" style="position: relative;">
+  <p class="govuk-phase-banner__content">
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+	<div class="banner-content-right" style="position: absolute;  right:0; top:10px;">
+		<a href="logged-out" class="govuk-link govuk-link--no-visited-state">Sign out</a>
+	</div>
+</div>
+
+
+<h1 class="govuk-heading-xl govuk-!-margin-top-3">My requests</h1>
+
+<!-- START of search/filter -->
+
+<div class="govuk-grid-row govuk-!-margin-bottom-1">
+	
+  <div class="govuk-grid-column-two-thirds">
+	  
+	<div class="govuk-form-group">
+	  <label class="govuk-label" for="full">Search</label>
+	  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+	</div>
+		
+  </div>
+		
+		
+  <div class="govuk-grid-column-one-third">
+		
+	<div class="govuk-form-group">
+	  <label class="govuk-label" for="sort">
+	    Status
+	  </label>
+	  <select class="govuk-select" id="sort" name="sort">
+	    <option value="published">New</option>
+	    <option value="updated" selected>Open</option>
+	    <option value="views">On hold</option>
+	    <option value="comments">Solved</option>
+	  </select>
+	</div>
+
+  </div>
+    
+</div>
+
+
+<!-- END of search/filter -->
+
+
+
+<!-- START of table results -->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+	  
+	<table class="govuk-table govuk-!-margin-bottom-6">
+	  <thead class="govuk-table__head">
+	    <tr class="govuk-table__row">
+	      <th scope="col" class="govuk-table__header">Subject</th>
+	      <th scope="col" class="govuk-table__header">Id</th>
+	      <th scope="col" class="govuk-table__header">Requestor</th>
+	      <th scope="col" class="govuk-table__header">Last activity</th>
+	      <th scope="col" class="govuk-table__header">Status</th>
+	    </tr>
+	  </thead>
+	  <tbody class="govuk-table__body">
+	    <tr class="govuk-table__row">
+	      <th scope="row" class="govuk-table__header"><a href="ticket">ESFA IP Address - integration issues</a></th>
+	      <td class="govuk-table__cell">#5171105</td>
+	      <td class="govuk-table__cell">Nigel Steane</td>
+	      <td class="govuk-table__cell">1 months ago</td>
+	      <td class="govuk-table__cell"><strong class="govuk-tag">Solved</strong></td>
+	    </tr>
+	    <tr class="govuk-table__row">
+	      <th scope="row" class="govuk-table__header"><a href="ticket">Data lock issues</a></th>
+	      <td class="govuk-table__cell">#2121191</td>
+	      <td class="govuk-table__cell">Nigel Steane</td>
+	      <td class="govuk-table__cell">2 months ago</td>
+	      <td class="govuk-table__cell"><strong class="govuk-tag">Solved</strong></td>
+	    </tr>
+	    <tr class="govuk-table__row">
+	      <th scope="row" class="govuk-table__header"><a href="ticket">Data lock issues revisted</a></th>
+	      <td class="govuk-table__cell">#2121191</td>
+	      <td class="govuk-table__cell">Nigel Steane</td>
+	      <td class="govuk-table__cell">2 months ago</td>
+	      <td class="govuk-table__cell"><strong class="govuk-tag">Solved</strong></td>
+	    </tr>
+	    <tr class="govuk-table__row">
+	      <th scope="row" class="govuk-table__header"><a href="ticket">Lorem ipsum dollar sit amet</a></th>
+	      <td class="govuk-table__cell">#8678215</td>
+	      <td class="govuk-table__cell">Nigel Steane</td>
+	      <td class="govuk-table__cell">3 months ago</td>
+	      <td class="govuk-table__cell"><strong class="govuk-tag">Solved</strong></td>
+	    </tr>
+	  </tbody>
+	</table>
+	  
+	  
+  </div>
+</div>
+
+
+<!-- END of table results -->
+
+
+
+<!-- START pagination -->
+<nav role="navigation" aria-label="Pagination">
+    <p class="pagination__summary">Showing 1 to 20 of 400 results</p>
+    <ul class="pagination govuk-list">
+        <li class="pagination__item"><a class="pagination__link govuk-link govuk-link--no-visited-state current" href="#0" aria-current="true" aria-label="Page 1, current page">1</a></li>
+        <li class="pagination__item"><a class="pagination__link govuk-link govuk-link--no-visited-state" href="#0" aria-label="Page 2">2</a></li>
+        <li class="pagination__item"><a class="pagination__link govuk-link govuk-link--no-visited-state" href="#0" aria-label="Page 3">3</a></li>
+        <li class="pagination__item"><a class="pagination__link govuk-link govuk-link--no-visited-state" href="#0" aria-label="Page 4">4</a></li>
+        <li class="pagination__item"><a class="pagination__link govuk-link govuk-link--no-visited-state" href="#0" aria-label="Page 5">5</a></li>
+        <li class="pagination__item"><a class="pagination__link govuk-link govuk-link--no-visited-state" href="#0" aria-label="Next page">Next</a></li>
+    </ul>
+</nav>
+<!-- END pagination -->
+
+
+</div>
+{% endblock %}

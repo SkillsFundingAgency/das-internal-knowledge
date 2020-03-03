@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+	
+
+<div class="govuk-phase-banner" style="position: relative;">
+  <p class="govuk-phase-banner__content">
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+	<div class="banner-content-right" style="position: absolute; right:0; top:10px;">
+		<a href="logged-out" class="govuk-link govuk-link--no-visited-state">Sign out</a>
+	</div>
+</div>
+
+
+
+
+<div class="govuk-grid-row govuk-!-margin-top-6">
+	
+	<!-- left col -->
+	<div class="govuk-grid-column-two-thirds">
+	
+		<h1 class="govuk-heading-l govuk-!-margin-top-3">Submit a request</h1>
+		
+		<div class="govuk-form-group">
+		  <label class="govuk-label" for="full">Subject</label>
+		  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+		</div>
+										
+		<div class="govuk-form-group">
+		  <label class="govuk-label" for="more-detail">
+		    Description
+		  </label>
+		  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+		</div>
+		
+		<div class="govuk-form-group">
+		  <label class="govuk-label" for="file-upload-1">
+		    Upload a file (optional)
+		  </label>
+		  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+		</div>
+		
+		<div class="govuk-form-group">
+			<button class="govuk-button govuk-button" data-module="govuk-button">
+			  Submit
+			</button>
+		</div>
+		
+					
+	</div>
+	<!-- END left col -->
+	    
+</div>
+
+
+
+
+</div>
+{% endblock %}
