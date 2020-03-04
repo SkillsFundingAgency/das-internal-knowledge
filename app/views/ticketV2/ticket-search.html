@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+  text: "Back",
+  href: "ticket-start-homepage"
+}) }}
+
+
+<div class="govuk-width-container ">
+	<div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
+		
+		<div class="govuk-grid-column-two-thirds ">
+	      
+	  <h1 class="govuk-heading-l">Track a ticket status</h1>
+	  
+	  <div class="govuk-!-padding-bottom-6">
+	  
+      {% from "govuk/components/input/macro.njk" import govukInput %}
+
+		{{ govukInput({
+		  label: {
+		    text: "Enter your ticket number"
+		  },
+		  hint: {
+		    text: "For example, 502135326"
+		  },
+		  classes: "govuk-input--width-10",
+		  id: "width-10",
+		  name: "width-10"
+		}) }}
+		
+		{% from "govuk/components/button/macro.njk" import govukButton %}
+	
+		{{ govukButton({
+		  text: "Continue",
+		  href: "login-ss"
+		}) }}
+		
+	  </div>
+				
+		<h3 class="govuk-heading-m">Where to find your ticket number</h3>
+		
+		<p>You'll only have a ticket number if you've been in touch with our support team. Your ticket number can be found on an email or SMS response from when you have contacted us.</p>
+				
+		
+		<details>
+
+		  <summary><span class="summary govuk-body" style="color: #005ea5; text-decoration: underline;">If you can't find your ticket number</span></summary>
+		
+		  <div class="panel panel-border-narrow govuk-!-margin-top-6" style=" 
+			  	box-sizing: border-box;
+			    clear: both;
+			    border-left-style: solid;
+			    border-left-width: 5px;
+			    border-color: #bfc1c3;
+			    padding: 0.78947em;
+			    margin-bottom: 0.78947em;
+		
+			">
+		
+		    <p class="govuk-body">If you can't find your ticket number <a href="#">chat with an agent</a> or give us a Call us on 08000 150 600</p>
+				
+ 		
+		  </div>
+		
+		</details>
+		
+		</div>
+	
+	</div>
+</div>
+
+{% endblock %}
+

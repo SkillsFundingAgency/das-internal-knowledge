@@ -1,0 +1,133 @@
+{% extends "layout.html" %}
+
+
+
+{% block main %}
+<section class="app-section app-section--blue  govuk-!-margin-bottom-9">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">  
+        <h1 class="govuk-heading-m app-heading--section-blue">Get help with the apprenticeship service</h1>
+        <form action="/search" novalidate="">
+          <div class="gem-c-search gem-c-search--on-govuk-blue">
+            <label for="search" class="gem-c-search__label">
+              Enter your question
+            </label>
+            <div class="gem-c-search__item-wrapper">
+              <input type="search" value="" id="search" name="search" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
+              <div class="gem-c-search__item gem-c-search__submit-wrapper">
+                <button type="submit" class="gem-c-search__submit">Search</button>
+              </div>
+            </div>
+          </div>
+        </form>
+         <p style="color: #fff;"><a href="ticket-search" style="color: #fff;">Check your ticket status</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+    
+  
+<div class="govuk-grid-row">
+      
+            <div class="govuk-grid-column-one-third app-grid-column-one-third--border-grey">
+              <h3 class="govuk-heading-m">Employer</h3>
+              <ul class="govuk-list">
+                
+                  <li class="govuk-!-margin-top-6"><a class="govuk-link" href="/hc/en-gb/articles/360006713099-Apprenticeship-funding-employer-">Apprenticeship funding (employer)</a></li>
+                
+                  <li class="govuk-!-margin-top-6"><a class="govuk-link" href="/hc/en-gb/articles/360006614880-Reset-your-password-employer-">Reset your password (employer)</a></li>
+                                
+                  <li class="govuk-!-margin-top-6"><a class="govuk-link" href="/hc/en-gb/articles/360009508720-Register-for-an-account-if-you-use-an-external-payroll-agent-or-bureau">Register for an account if you use an external payroll agent or bureau</a></li>
+                
+                <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="/hc/en-gb/sections/360001841359-Employer">View all <span class="app-text--lowercase">Employer</span> articles</a></li>
+            </ul>
+          </div>
+          
+            <div class="govuk-grid-column-one-third app-grid-column-one-third--border-grey">
+              <h3 class="govuk-heading-m">Training provider</h3>
+              <ul class="govuk-list">
+                
+                  <li class="govuk-!-margin-top-6"><a class="govuk-link" href="/hc/en-gb/articles/360009563399-Set-training-provider-permissions-training-provider-">Set training provider permissions (training provider)</a></li>
+                
+                  <li class="govuk-!-margin-top-6"><a class="govuk-link" href="/hc/en-gb/articles/360009563219-Types-of-apprenticeships-training-provider-">Types of apprenticeships (training provider)</a></li>
+                
+                
+                  <li class="govuk-!-margin-top-6"><a class="govuk-link" href="/hc/en-gb/articles/360009561819-Reset-your-password-training-provider-">Reset your password (training provider)</a></li>
+                
+                <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="/hc/en-gb/sections/360002328100-Training-provider">View all <span class="app-text--lowercase">Training provider</span> articles</a></li>
+            </ul>
+          </div>
+          
+          <div class="govuk-grid-column-one-third app-grid-column-one-third--border-grey">
+		      <h3 class="govuk-heading-m">End-point assessment organisation</h3>
+		      <ul class="govuk-list">
+		        
+		          <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="/hc/en-gb/articles/360006713099-Apprenticeship-funding-employer-">View all end-point assessment articles</a></li>
+		        
+		    </ul>
+		  </div>
+          
+        
+      
+      
+    </div>
+  </div>
+  
+  <section class="app-section">
+  <div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full"> 
+
+        <h2 class="govuk-heading-l">Contact us</h2>
+        <p class="govuk-body">Our opening times are 8am to 8pm, Monday to Friday.</p>
+        <div class="das-cards">
+          <div class="das-card app-card">
+            <div class="app-card-inner--grey">
+              <h3 class="govuk-heading-m">Phone</h3>
+              <p class="govuk-body">Call us on 08000 150 600.</p>
+              <p class="govuk-body"><a href="https://www.gov.uk/call-charges" class="govuk-link" target="_blank">Find out about call charges</a>.</p>
+            </div>
+          </div>
+
+          <div class="das-card app-card">
+            <div class="app-card-inner--grey">
+              <h3 class="govuk-heading-m">Email</h3>
+              <p class="govuk-body">Send an email to</p>
+              <p class="govuk-body"><a href="mailto:helpdesk@manage-apprenticeships.service.gov.uk" class="govuk-link">helpdesk@manage-apprenticeships.service.gov.uk</a>.</p>
+              <p class="govuk-body">During our opening times, we’ll reply within 4 hours.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="app-card-inner--grey govuk-!-margin-top-3">
+          <h2 class="govuk-heading-m">Send a message</h2>
+          <p class="govuk-body">You can <a class="submit-a-request govuk-link" role="button" href="/hc/en-gb/requests/new?ticket_form_id=360000235179">send a message</a>.
+          During our opening times, we’ll reply within 4 hours.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+</div>
+
+{% endblock %}
+
+{% endblock %}
