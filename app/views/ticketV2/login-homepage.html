@@ -21,7 +21,7 @@
             </div>
           </div>
         </form>
-         <p style="color: #fff;"><a href="login-homepage" style="color: #fff;">Check your ticket status</a></p>
+         <p style="color: #fff;"><a href="login-ss" style="color: #fff;">Check your ticket status</a></p>
       </div>
     </div>
   </div>
@@ -90,5 +90,70 @@
 {% endblock %}
 
 
+<!-- START MODAL -->
+<div style="background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    left: 0px"></div>
+
+<div style="background: #fff;
+  bottom: 0;
+  height: 450px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  z-index: 1000;
+  padding: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0px;">
+	  
+  <h2 class="govuk-heading-m">Sign into Apprenticeships Service Support</h2>
+  
+  <div class="govuk-form-group">
+	  <label class="govuk-label" for="full">Username</label>
+	  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+	</div>
+	
+	<div class="govuk-form-group">
+	  <label class="govuk-label" for="full">Password</label>
+	  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+	</div>
+	
+	{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+{{ govukCheckboxes({
+  name: "waste",
+  fieldset: {
+    legend: {
+      isPageHeading: false,
+      classes: "govuk-fieldset__legend--xl"
+    }
+  },
+  items: [
+    {
+      value: "farm",
+      text: "Stay signed in"
+    }
+  ]
+}) }}
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Sign in",
+  href: "requests"
+}) }}
+
+<p><a href="#">Forgot my password</a></p>
+
+<p>New to the apprenticeships service support? <a href="#">Sign up</a></p>
+  
+</div>
+<!-- END MODAL -->
 
 {% endblock %}
