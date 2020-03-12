@@ -111,7 +111,9 @@ $govuk-assets-path: '/govuk/assets/';
 
 //overides for tab styling
 
-.js-enabled {
+.js-enabled  {
+	
+	.govuk-vertical-tabs {
 	  
 	  .govuk-tabs__list {
         border-bottom: 0px solid black;
@@ -186,6 +188,8 @@ $govuk-assets-path: '/govuk/assets/';
 		    line-height: 1.1111111111;	
 		  }
 	  }
+	  
+	}
 }
 
 
@@ -206,13 +210,13 @@ $govuk-assets-path: '/govuk/assets/';
 //HEADER
 
 .govuk-header__container {
-	border-bottom: 0;
-	margin-bottom: 0;
-	padding-bottom: 0;
+	//border-bottom: 0;
+	//margin-bottom: 0;
+	//padding-bottom: 0;
 }
 
 .govuk-header {
-	border-bottom: 0;
+	//border-bottom: 0;
 }
 
 //SEARCH
@@ -617,4 +621,38 @@ input[type="search"] {
 time {font-size: 16px;
     line-height: 1.25;
     color: #6f777b;}
+
+
+
+    
+.zendesk-subnav {
+    
+    li {
+	    display: inline-block;
+	    font-weight: bold;
+	    font-size: 19px;
+	    border-bottom: 3px solid #fff;
+	    margin-right: 15px;
+        box-sizing: border-box;
+		position: relative;
+		height: 50px;
+		padding: 0 15px;
+		line-height: 50px;
+	    
+	    &.active {
+		    border-bottom: 3px solid #1d70b8;
+	    }
+	    
+	    a {
+		    text-decoration: none;
+	    }
+    }
+}
+
+
+
+
+
+
+
 
