@@ -626,18 +626,21 @@ time {font-size: 16px;
 
     
 .zendesk-subnav {
+	
+	background-color: #f8f8f8;
     
     li {
 	    display: inline-block;
 	    font-weight: bold;
 	    font-size: 19px;
-	    border-bottom: 3px solid #fff;
+	    border-bottom: 3px solid #f8f8f8;
 	    margin-right: 15px;
         box-sizing: border-box;
 		position: relative;
 		height: 50px;
 		padding: 0 15px;
 		line-height: 50px;
+		margin-bottom: 0;
 	    
 	    &.active {
 		    border-bottom: 3px solid #1d70b8;
