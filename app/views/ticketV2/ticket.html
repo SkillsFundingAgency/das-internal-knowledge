@@ -1,4 +1,4 @@
-{% extends "layout-loggedin.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
   GOV.UK Prototype Kit
@@ -7,15 +7,12 @@
 {% block content %}
 <div class="govuk-width-container">
 	
-
-<div class="govuk-phase-banner" style="position: relative;">
-  <p class="govuk-phase-banner__content">
-    <span class="govuk-phase-banner__text">
-      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-    </span>
-  </p>
-	<div class="banner-content-right" style="position: absolute; right:0; top:10px;">
-		<a href="requests" class="govuk-link govuk-link--no-visited-state govuk-!-margin-right-3">My requests</a> <a href="logged-out" class="govuk-link govuk-link--no-visited-state">Sign out</a>
+	
+<div class="govuk-phase-banner" style="position: relative; top:-40px;">
+	<div style="text-align: right;">
+		<a href="submit-a-request" class="govuk-link govuk-link--no-visited-state govuk-!-margin-right-3">Submit a ticket</a> 
+		<a href="requests" class="govuk-link govuk-link--no-visited-state govuk-!-margin-right-3">My tickets</a> 
+		<a href="logged-out" class="govuk-link govuk-link--no-visited-state">Sign out</a>
 	</div>
 </div>
 
