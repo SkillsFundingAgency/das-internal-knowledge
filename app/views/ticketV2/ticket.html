@@ -8,15 +8,24 @@
 <div class="govuk-width-container">
 	
 	
-<div class="govuk-phase-banner" style="position: relative; top:-40px;">
-	<div style="text-align: right;">
-		<a href="submit-a-request" class="govuk-link govuk-link--no-visited-state govuk-!-margin-right-3">Submit a ticket</a> 
-		<a href="requests" class="govuk-link govuk-link--no-visited-state govuk-!-margin-right-3">My tickets</a> 
-		<a href="logged-out" class="govuk-link govuk-link--no-visited-state">Sign out</a>
-	</div>
-</div>
+<!-- SUBNAV -->
+{% include "includes/zendesk-subnav.html" %}  
+<!-- END subnav -->
 
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
 
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Apprenticeship Service Support",
+      href: "#"
+    },
+    {
+      text: "My requests",
+      href: "requests"
+    }
+  ]
+}) }}
 
 <div class="govuk-grid-row govuk-!-margin-top-6">
 	
@@ -74,11 +83,11 @@
 		</div>
 		
 		<div class="govuk-form-group">
-			<button disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled" data-module="govuk-button">
+			<button class="govuk-button govuk-button govuk-!-margin-right-1" data-module="govuk-button">
 			  Submit
 			</button>
 			
-			<button class="govuk-button" data-module="govuk-button">
+			<button class="govuk-button govuk-button--secondary" data-module="govuk-button">
 			  Mark as solved 
 			</button>
 		</div>

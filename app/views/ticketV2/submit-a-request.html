@@ -7,15 +7,24 @@
 {% block content %}
 <div class="govuk-width-container">
 	
+<!-- SUBNAV -->
+{% include "includes/zendesk-subnav.html" %}  
+<!-- END subnav -->
 
-<div class="govuk-phase-banner" style="position: relative; top:-40px;">
-	<div style="text-align: right;">
-		<a href="submit-a-request" class="govuk-link govuk-link--no-visited-state govuk-!-margin-right-3">Submit a ticket</a> 
-		<a href="requests" class="govuk-link govuk-link--no-visited-state govuk-!-margin-right-3">My tickets</a> 
-		<a href="logged-out" class="govuk-link govuk-link--no-visited-state">Sign out</a>
-	</div>
-</div>
 
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Apprenticeship Service Support",
+      href: "#"
+    },
+    {
+      text: "Submit a ticket"
+    }
+  ]
+}) }}
 
 
 <div class="govuk-grid-row govuk-!-margin-top-6">
@@ -23,7 +32,7 @@
 	<!-- left col -->
 	<div class="govuk-grid-column-two-thirds">
 	
-		<h1 class="govuk-heading-l govuk-!-margin-top-3">Submit a request</h1>
+		<h1 class="govuk-heading-l govuk-!-margin-top-3">Submit a ticket</h1>
 		
 		<div class="govuk-form-group">
 		  <label class="govuk-label" for="full">Subject</label>
