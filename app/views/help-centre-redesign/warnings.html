@@ -10,7 +10,7 @@
   }
 </style>
 
-<h1 class="govuk-heading-l">Red banner - Covid banner</h1>
+<h1 class="govuk-heading-l">Option 1</h1>
 
 <section class="app-section app-section--red" style="margin-top: -10px; z-index: 99;">
 	<div class="govuk-width-container">
@@ -25,7 +25,7 @@
 	</div>
 </section>
 
-<p>If more than one</p>
+<p>If more than one:</p>
 
 <section class="app-section app-section--red" style="margin-top: -10px; z-index: 99;">
 	<div class="govuk-width-container">
@@ -48,12 +48,26 @@
 
 {% block content %}
 
-<h1 class="govuk-heading-l ">Warning text</h1>
+<h1 class="govuk-heading-l ">Option 2</h1>
 
 <div class="govuk-width-container">
 
 	<div class="govuk-grid-row">
 	  <div class="govuk-grid-column-full">
+		  
+		  
+		  <div class="govuk-warning-text">
+			  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+			  <strong class="govuk-warning-text__text">
+			    <span class="govuk-warning-text__assistive">Warning</span>
+			    <a href="#">Covid-19 is causing delays in us going to the pub</a>
+			  </strong>
+			</div>
+		  
+		  	
+		  	<p>If more than one:</p>
+		  	<br>
+		  	
 			
 			<div class="govuk-warning-text">
 			  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -79,6 +93,41 @@
 			  </strong>
 			</div>
 			
+			<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+			
+	  </div>
+	</div>
+	
+	
+	
+	
+	<h1 class="govuk-heading-l ">Option 3</h1>
+	
+	
+	<div class="govuk-grid-row">
+	  <div class="govuk-grid-column-full">
+		  
+		  
+		  	
+		  	<div class="notifications-box" style="border: 5px solid #f47738; padding: 1rem;">
+			  	<h1 class="govuk-heading-m">Important updates</h1>
+			  	<ul class="govuk-list">
+				  <li><a class="govuk-link" href="#">Our phone systems are experiencing problems, please bear with us while we try to resolve this issue</a></li>
+				</ul>
+		  	</div>
+		  	
+		  	<br>
+		  	<p>If more than one:</p>
+		  	
+		  	<div class="notifications-box" style="border: 5px solid #f47738; padding: 1rem;">
+			  	<h1 class="govuk-heading-m">Important updates</h1>
+			  	<ul class="govuk-list govuk-list--bullet">
+				  <li><a class="govuk-link" href="#">Our phone systems are experiencing problems, please bear with us while we try to resolve this issue</a></li>
+				  <li><a class="govuk-link" href="#">We are working on a known issue around </a></li>
+				  <li><a class="govuk-link" href="#">Covid-19 is causing delays in us going to the pub</a></li>
+				</ul>
+		  	</div>
+						
 			<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 			
 	  </div>
