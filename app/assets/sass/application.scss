@@ -74,6 +74,16 @@ $govuk-assets-path: '/govuk/assets/';
   padding:40px 0;
 }
 
+.app-section--red {
+  background-color: #d4351c;
+    border-top: none;
+    padding: 25px 0;
+    color: #fff;
+    a {
+	   color: #fff; 
+    }
+}
+
 .app-section--blue {
   background-color:#1d70b8;
 }
