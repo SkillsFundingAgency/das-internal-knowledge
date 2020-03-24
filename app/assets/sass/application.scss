@@ -661,6 +661,24 @@ time {font-size: 16px;
     }
 }
 
+//New thicker blue footer
+
+.feedbak-footer {
+	border-bottom: 10px solid #1d70b8;
+	
+	.govuk-width-container {
+		background-color: #1d70b8; color: #fff; padding: 25px 25px 25px 25px; border-bottom: 1px solid #fff;
+		
+		p {
+			color: #fff; margin: 0; font-weight: bold;font-size: 16px; line-height: 1.25; text-indent: 15px;
+			
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
 
 
 
