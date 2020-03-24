@@ -1,0 +1,175 @@
+	{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+<style>
+.govuk-header__container {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 10px;
+  }
+</style>
+
+
+<section class="app-section" style="margin-top: -10px; z-index: 99;">
+	<div class="govuk-width-container">
+	    <div class="govuk-grid-row">
+			<div class="govuk-grid-column-three-thirds"> 
+				<p class="govuk-body-l govuk-!-font-weight-bold" style="border: 5px solid #1d70b8; padding: 20px; margin-top: 30px !important; margin-bottom: 20px;">
+          <strong>Coronavirus (COVID-19)</strong>: <a href="view-all" class="govuk-link" style="color: #1d70b8;">read our guidance</a> on the changes we’re making to apprenticeships and <a href="view-all" class="govuk-link" style="color: #1d70b8;">find out how employers can pause apprenticeships</a>.
+        </p>
+			</div>
+	    </div>
+	</div>
+</section>
+
+
+<section class="app-section app-section--blue  govuk-!-margin-bottom-9">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">  
+        <h1 class="govuk-heading-m app-heading--section-blue">Get help with the apprenticeship service</h1>
+        <form action="/search" novalidate="">
+          <div class="gem-c-search gem-c-search--on-govuk-blue">
+            <label for="search" class="gem-c-search__label">
+              Enter your question
+            </label>
+            <div class="gem-c-search__item-wrapper">
+              <input type="search" value="" id="search" name="search" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
+              <div class="gem-c-search__item gem-c-search__submit-wrapper">
+                <button type="submit" class="gem-c-search__submit">Search</button>
+              </div>
+            </div>
+          </div>
+        </form>
+         <p style="color: #fff;"><a href="ticket-search" style="color: #fff;">Check your ticket status</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+
+	<div class="govuk-grid-row">
+	  <div class="govuk-grid-column-full">
+	    <h2 class="govuk-heading-l">Internal articles</h2>
+	  </div>
+	</div>
+
+  <div class="govuk-grid-row preview-list">
+	  
+
+	<div class="govuk-grid-column-one-third">
+              <h3 class="govuk-heading-m">ESFA Comms</h3>
+              <p>Section description. Topics you might find in this section Lorem ipsum dollar sit amet...</p>
+              <ul class="govuk-list">
+                <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../../help-centre-redesign/view-all">View all <span class="app-text--lowercase">ESFA Comms</span> articles</a></li>
+            </ul>
+          </div>
+          
+          <div class="govuk-grid-column-one-third">
+              <h3 class="govuk-heading-m">Non Levy</h3>
+              <p>Section description. Topics you might find in this section Lorem ipsum dollar sit amet...</p>
+              <ul class="govuk-list">                
+                <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">Non Levy</span> articles</a></li>
+            </ul>
+          </div>
+          
+          <div class="govuk-grid-column-one-third">
+              <h3 class="govuk-heading-m">KB Articles</h3>
+              <p>Section description. Topics you might find in this section Lorem ipsum dollar sit amet...</p>
+              <ul class="govuk-list">
+                <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">Employer</span> articles</a></li>
+            </ul>
+          </div>
+          
+          <div class="govuk-grid-column-one-third">
+              <h3 class="govuk-heading-m">EPA</h3>
+              <p>Section description. Topics you might find in this section Lorem ipsum dollar sit amet...</p>
+              <ul class="govuk-list">
+                <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">EPA</span> articles</a></li>
+            </ul>
+          </div>
+          
+          <div class="govuk-grid-column-one-third">
+              <h3 class="govuk-heading-m">Internal only</h3>
+              <p>Section description. Topics you might find in this section Lorem ipsum dollar sit amet...</p>
+              <ul class="govuk-list">
+                <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">Internal Only</span> articles</a></li>
+            </ul>
+          </div>
+        
+    
+  </div>
+  
+  <div class="govuk-grid-column">
+    <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--xl govuk-!-margin-top-0">
+  </div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">Help articles</h2>
+  </div>
+</div>
+  
+<div class="govuk-grid-row">
+	          
+	  <div class="govuk-grid-column-one-third">
+	      <h3 class="govuk-heading-m">Employer</h3>
+	      <ul class="govuk-list">
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Apprenticeship funding</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Reset your password</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Entered the wrong PAYE scheme details</a></li>
+	        <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">Employer</span> articles</a></li>
+	    </ul>
+	  </div>
+	  
+	    <div class="govuk-grid-column-one-third">
+	      <h3 class="govuk-heading-m">Training provider</h3>
+	      <ul class="govuk-list">
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Set training provider permissions (training provider)</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Types of apprenticeships</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Data locks</a></li>
+	        <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">Training provider</span> articles</a></li>
+	    </ul>
+	  </div>
+	  
+	  
+	  <div class="govuk-grid-column-one-third">
+	      <h3 class="govuk-heading-m">End-point assessment organisation</h3>
+	      <ul class="govuk-list">
+		      <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Record a grade API</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Get an end-point assessment plan</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Apply to assess a standard</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">end-point assessment</span> articles</a></li>
+	    </ul>
+	  </div>
+
+    </div>
+    
+    
+  </div> <!-- ENDS width container -->
+
+
+
+<!-- CONTACT OPTIONS -->
+{% include "includes/contact-options.html" %}  
+<!-- END contact options -->
+
+
+{% endblock %}
+
+
+<!-- FEEDBACK FOOTER -->
+{% include "includes/feedback-footer.html" %}  
+<!-- END feedback footer -->
+
+      
+{% endblock %}
