@@ -6,22 +6,37 @@
 
 {% block main %}
 
+<section class="app-section" style="margin-top: -10px; padding-top: 10px; padding-bottom: 0;">
+	<div class="govuk-width-container">
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+	</div>
+
+	<div class="govuk-width-container">
+			<div class="govuk-grid-column-three-thirds"> 
+				<p class="govuk-body-l govuk-!-font-weight-bold" style="border: 5px solid #1d70b8; padding: 20px; margin-top: 20px !important; margin-bottom: 20px;">
+          <strong>Coronavirus (COVID-19)</strong>: <a href="view-all" class="govuk-link" style="color: #1d70b8;">check how the apprenticeship service will support you</a>.
+        </p>
+			</div>
+	</div>
+</section>
+
 {% block content %}
 
 
 <div class="govuk-width-container">
 
-{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
 
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Apprenticeship Service Support",
-      href: "./"
-    },
-    {
-      text: "Coronavirus"
-    } ]
+{{ govukBackLink({
+  text: "Help home",
+  href: "banner-live"
 }) }}
 	
 
@@ -33,42 +48,46 @@
 	    
 	    <h3 class="govuk-heading-l">Promoted Coronavirus articles</h3>
 	    
-	    <p><a href="https://www.gov.uk/government/publications/coronavirus-covid-19-apprenticeship-programme-response">Read our guidance</a> on the changes we're making to apprenticeship</p>
+	    <p><a href="https://www.gov.uk/government/publications/coronavirus-covid-19-apprenticeship-programme-response">Read our guidance</a> on the changes we’re making to apprenticeships. You can also find out how to:</p>
 	    
 	    <ul id="resultsList" class="govuk-list govuk-list--bullet">
 		  <li class="govuk-!-margin-top-3">
-            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">Important article 1</a>
+            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">pause and stop apprenticeships</a>
           </li>
           <li class="govuk-!-margin-top-3">
-            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">Important article 2</a>
+            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">record coronavirus changes in the ILR</a>
           </li>
 	    </ul>
 	    
 	    </div>
-	    
 	    
 	    <div class="govuk-grid-row">
 	      <div class="govuk-grid-column-full">
 	        <h2 class="govuk-heading-l">All Coronavirus articles</h2>
 	      </div>
 	    </div>
-
     
       <ul id="resultsList" class="govuk-list govuk-!-margin-bottom-9">
           <li class="govuk-!-margin-top-3">
-            <a href="article" class="govuk-link">Coronavirus article 1</a>
+            <a href="article" class="govuk-link">Coronavirus (COVID-19): how the apprenticeship service will support you</a>
           </li>
           <li class="govuk-!-margin-top-3">
-            <a href="article" class="govuk-link">Coronavirus article 2</a>
+            <a href="article" class="govuk-link">Record coronavirus changes in the ILR</a>
           </li>
           <li class="govuk-!-margin-top-3">
-            <a href="article" class="govuk-link">Coronavirus article 3</a>
+            <a href="article" class="govuk-link">Changes to apprenticeship assessments</a>
           </li>
           <li class="govuk-!-margin-top-3">
-            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">Find out how you can pause them for your own apprentices</a>
+            <a href="#" class="govuk-link">Get your apprenticeship certificate</a>
           </li>
           <li class="govuk-!-margin-top-3">
-            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">Find out how employers can pause apprenticeships</a>
+            <a href="#" class="govuk-link">Find out how employers can pause apprenticeships</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="#" class="govuk-link">Apprentices that have been made redundant</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="#" class="govuk-link">Expired funds after a break in learning</a>
           </li>
       </ul>
     
