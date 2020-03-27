@@ -1,0 +1,176 @@
+	{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+<style>
+.govuk-header__container {
+	
+  }
+</style>
+
+<section class="app-section" style="margin-top: -10px; padding-top: 10px; padding-bottom: 0;">
+	<div class="govuk-width-container">
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+	</div>
+
+	<div class="govuk-width-container">
+			<div class="govuk-grid-column-three-thirds"> 
+				<p class="govuk-body-l govuk-!-font-weight-bold" style="border: 5px solid #1d70b8; padding: 20px; margin-top: 20px !important; margin-bottom: 20px;">
+          <strong>Coronavirus (COVID-19)</strong>: <a href="view-all" class="govuk-link" style="color: #1d70b8;">check how the apprenticeship service will support you</a>.
+        </p>
+			</div>
+	</div>
+</section>
+
+
+<section class="app-section app-section--blue  govuk-!-margin-bottom-9">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">  
+        <h1 class="govuk-heading-m app-heading--section-blue">Get help with the apprenticeship service</h1>
+        <form action="/search" novalidate="">
+          <div class="gem-c-search gem-c-search--on-govuk-blue">
+            <label for="search" class="gem-c-search__label">
+              Enter your question
+            </label>
+            <div class="gem-c-search__item-wrapper">
+              <input type="search" value="" id="search" name="search" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
+              <div class="gem-c-search__item gem-c-search__submit-wrapper">
+                <button type="submit" class="gem-c-search__submit">Search</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% block content %}
+
+
+<div class="govuk-width-container">	
+	
+	
+	
+	<div class="govuk-grid-row">
+	  <div class="govuk-grid-column-full">
+		  
+		  
+		  	
+		  	<div class="notifications-box" style="border: 5px solid #f47738; padding: 1rem;">
+			  	<h1 class="govuk-heading-m">Important updates</h1>
+			  	<ul class="govuk-list">
+				  <li><a class="govuk-link" href="#">Our phone systems are experiencing problems, please bear with us while we try to resolve this issue</a></li>
+				</ul>
+		  	</div>
+		  	
+		  	<br>
+		  	<p>If more than one:</p>
+		  	
+		  	<div class="notifications-box" style="border: 5px solid #f47738; padding: 1rem;">
+			  	<h1 class="govuk-heading-m">Important updates</h1>
+			  	<ul class="govuk-list govuk-list--bullet">
+				  <li><a class="govuk-link" href="#">Our phone systems are experiencing problems, please bear with us while we try to resolve this issue</a></li>
+				  <li><a class="govuk-link" href="#">We are working on a known issue around </a></li>
+				  <li><a class="govuk-link" href="#">Covid-19 is causing delays in us going to the pub</a></li>
+				</ul>
+		  	</div>
+						
+			<hr class="govuk-section-break govuk-section-break--xl govuk-section-break">
+			
+			<h2 class="govuk-heading-l">Patterns used in DAS</h2>
+			
+			<div class="notifications-box" style="border: 5px solid #2e358b; padding: 1rem; margin-bottom: 1rem;">
+			  	<h1 class="govuk-heading-m">Optional heading</h1>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  	</div>
+		  	
+		  	<div class="notifications-box" style="border: 5px solid #28a197; padding: 1rem; margin-bottom: 1rem;">
+			  	<h1 class="govuk-heading-m">Success summary</h1>
+			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  	</div>
+		  	
+		  	<div class="notifications-box" style="border: 5px solid #f47738; padding: 1rem; margin-bottom: 3rem;">
+			  	<h1 class="govuk-heading-m">Warning summary</h1>
+			  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  	</div>
+			
+	  </div>
+	</div>
+
+
+  
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-l">Help articles</h2>
+  </div>
+</div>
+  
+<div class="govuk-grid-row">
+	          
+	  <div class="govuk-grid-column-one-third">
+	      <h3 class="govuk-heading-m">Employer</h3>
+	      <ul class="govuk-list">
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Apprenticeship funding</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Reset your password</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Entered the wrong PAYE scheme details</a></li>
+	        <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">Employer</span> articles</a></li>
+	    </ul>
+	  </div>
+	  
+	    <div class="govuk-grid-column-one-third">
+	      <h3 class="govuk-heading-m">Training provider</h3>
+	      <ul class="govuk-list">
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Set training provider permissions (training provider)</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Types of apprenticeships</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Data locks</a></li>
+	        <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">Training provider</span> articles</a></li>
+	    </ul>
+	  </div>
+	  
+	  
+	  <div class="govuk-grid-column-one-third">
+	      <h3 class="govuk-heading-m">End-point assessment organisation</h3>
+	      <ul class="govuk-list">
+		      <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Record a grade API</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Get an end-point assessment plan</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link" href="../help-centre-redesign/article">Apply to assess a standard</a></li>
+	          <li class="govuk-!-margin-top-6"><a class="govuk-link govuk-!-font-weight-bold" href="../help-centre-redesign/view-all">View all <span class="app-text--lowercase">end-point assessment</span> articles</a></li>
+	    </ul>
+	  </div>
+
+    </div>
+    
+    
+  </div> <!-- ENDS width container -->
+
+
+
+<!-- CONTACT OPTIONS -->
+{% include "includes/contact-options.html" %}  
+<!-- END contact options -->
+
+
+{% endblock %}
+
+
+<!-- FEEDBACK FOOTER -->
+{% include "includes/feedback-footer.html" %}  
+<!-- END feedback footer -->
+
+      
+{% endblock %}
