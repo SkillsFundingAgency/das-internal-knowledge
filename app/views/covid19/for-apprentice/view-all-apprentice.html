@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Internal knowledge articles - show all
+{% endblock %}
+
+{% block main %}
+
+<style>
+.govuk-header__content {
+    display: none;
+  }
+</style>
+
+<section class="app-section" style="margin-top: -10px; padding-top: 10px; padding-bottom: 0;">
+	<div class="govuk-width-container">
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+	</div>
+
+</section>
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+	
+
+<div class="govuk-grid-row govuk-!-margin-top-5">
+    <div class="govuk-grid-column-two-thirds">
+	    
+	    
+	    <div class="promoted" style="background-color: #f8f8f8; padding: 20px; height: auto; margin-bottom: 50px;">
+	    
+	    <h3 class="govuk-heading-l">Essential apprentice guidance</h3>
+	    
+	    <p><a href="https://www.gov.uk/government/publications/coronavirus-covid-19-apprenticeship-programme-response">Read our guidance</a> on the changes we’re making to apprenticeships. You can also find out how to:</p>
+	    
+	    <ul id="resultsList" class="govuk-list govuk-list--bullet">
+		  <li class="govuk-!-margin-top-3">
+            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">Article title 1</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="/hc/en-gb/articles/360011235539-Learning-end-dates" class="govuk-link">Article title 1</a>
+          </li>
+	    </ul>
+	    
+	    </div>
+	    
+	    <div class="govuk-grid-row">
+	      <div class="govuk-grid-column-full">
+	        <h2 class="govuk-heading-l">All apprentice articles for the apprenticeship service</h2>
+	      </div>
+	    </div>
+    
+      <ul id="resultsList" class="govuk-list govuk-!-margin-bottom-3">
+          <li class="govuk-!-margin-top-3">
+            <a href="article" class="govuk-link">Article title 1</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="article" class="govuk-link">Article title 2</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="article" class="govuk-link">Article title 3</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="#" class="govuk-link">Article title 4</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="#" class="govuk-link">Article title 5</a>
+          </li>
+          <li class="govuk-!-margin-top-3">
+            <a href="#" class="govuk-link">Article title 6</a>
+          </li>
+      </ul>
+    
+    
+    </div>
+  </div>
+  
+  
+
+</div>
+
+
+<!-- CONTACT OPTIONS -->
+{% include "includes/contact-options.html" %}  
+<!-- END contact options -->
+
+{% endblock %}
+
+
+	
+{% endblock %}
