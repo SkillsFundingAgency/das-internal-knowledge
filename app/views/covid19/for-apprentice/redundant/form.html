@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Apprentice redundancy - form
+{% endblock %} 
+ 
+{% block main %}
+<style>
+.govuk-header__content {
+    display: block;
+  }
+</style>
+{% block content %}
+<div class="govuk-width-container">
+	
+	
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+  text: "Apprentices",
+  href: "#"
+}) }}
+	
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds" style="margin-bottom:50px;">
+	
+	<h1 class="govuk-heading-xl" style="margin: 50px 0 30px 0;">Title of page</h1>
+			
+	<p><strong>What do I do about... ?</strong></p>
+	
+	{% from "govuk/components/input/macro.njk" import govukInput %}
+
+	{{ govukInput({
+	  label: {
+	    text: "Event name"
+	  },
+	  id: "event-name",
+	  name: "event-name"
+	}) }}
+
+	
+	
+	
+	
+	</div>
+</div>
+
+</div>
+{% endblock %}
+
+
+	
+{% endblock %}

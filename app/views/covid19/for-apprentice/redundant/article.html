@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Apprentice redundancy - article page
+{% endblock %}
+
+{% block main %}
+<style>
+.govuk-header__content {
+    display: block;
+  }
+</style>
+{% block content %}
+<div class="govuk-width-container">
+	
+	
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+  text: "Apprentices",
+  href: "#"
+}) }}
+	
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds" style="margin-bottom:50px;">
+	
+	<h1 class="govuk-heading-xl" style="margin: 50px 0 30px 0;">Apprentice Redundancy</h1>
+			
+	<p><strong>What do I do about... ?</strong></p>
+	
+	<p>Lorem ipsum dolor sit amet <a href="form">Link to form</a></p>
+	
+	<p><strong>What do I do about... ?</strong></p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<p><strong>What can I get in touch?</strong></p>
+		
+	<p class="govuk-body"><a href="mailto:nationalhelpdesk@apprenticeships.gov.uk" class="govuk-link" target="_blank">nationalhelpdesk@apprenticeships.gov.uk</a>.</p>
+	<p class="govuk-body">Telephone: 0800 015 0400</p>
+	<p class="govuk-body">8am to 10pm, 7 days a week</p>
+	
+	
+	</div>
+</div>
+
+</div>
+{% endblock %}
+
+
+	
+{% endblock %}
