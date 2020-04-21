@@ -27,20 +27,65 @@
 	
 	<h1 class="govuk-heading-xl" style="margin: 50px 0 30px 0;">Title of page</h1>
 			
-	<p><strong>What do I do about... ?</strong></p>
 	
 	{% from "govuk/components/input/macro.njk" import govukInput %}
 
 	{{ govukInput({
 	  label: {
-	    text: "Event name"
+	    text: "Name"
 	  },
-	  id: "event-name",
-	  name: "event-name"
+	  id: "name",
+	  name: "name"
 	}) }}
+	
+	{{ govukInput({
+	  label: {
+	    text: "Contact number"
+	  },
+	  id: "contact-number",
+	  name: "contact-number",
+	  hint: {
+	    text: "XXX will contact you on this number to discuss new opportunities"
+	  }
+	}) }}
+	
+	{{ govukInput({
+	  label: {
+	    text: "Email"
+	  },
+	  id: "email",
+	  name: "email"
+	}) }}
+	
+	{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+{{ govukCheckboxes({
+  idPrefix: "waste",
+  name: "waste",
+  fieldset: {
+    legend: {
+      isPageHeading: false,
+      classes: "govuk-fieldset__legend--l"
+    }
+  },
+  hint: {
+    text: "Permission for ESFA to contact you. Lorem ipsum dollar sit"
+  },
+  items: [
+    {
+      value: "permisson",
+      text: "I give consent for XX to contact me"
+    }
+  ]
+}) }}
 
 	
-	
+	{% from "govuk/components/button/macro.njk" import govukButton %}
+
+	{{ govukButton({
+	  text: "Submit",
+	  href: "confirmation"
+	}) }}
 	
 	
 	</div>
