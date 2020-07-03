@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Data Unlocker
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Data Unlocker",
+        href: "index"
+      },
+      {
+        text: "Search learner"
+      }
+    ]
+  }) }}
+  
+  <a href="logged-out" class="signout" style="float: right; margin-top: -30px;">Sign out</a>
+  
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+	
+
+<div class="govuk-grid-row ">
+	
+	<!-- left col -->
+	<div class="govuk-grid-column-two-thirds">
+	
+		<h1 class="govuk-heading-l">Search for a learner</h1>
+		
+
+		<div class="govuk-form-group">
+		  <label class="govuk-label" for="full">Enter ULN</label>
+		    <span id="event-name-hint" class="govuk-hint">
+			    Unique learner number
+			  </span>
+
+		  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+		</div>
+		
+		
+		<div class="govuk-form-group">
+		  <label class="govuk-label" for="full">Enter UKPRN</label>
+		    <span id="event-name-hint" class="govuk-hint">
+			    UK Provider reference number
+			  </span>
+
+		  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+		</div>
+		
+
+		{% from "govuk/components/button/macro.njk" import govukButton %}
+			{{ govukButton({
+			  text: "Search",
+			  href: "results"
+			}) 
+		}}
+		
+		
+					
+	</div>
+	<!-- END left col -->
+	    
+</div>
+
+
+
+
+</div>
+{% endblock %}

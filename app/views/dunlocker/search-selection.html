@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Data Unlocker
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Data Unlocker",
+        href: "index"
+      },
+      {
+        text: "Search learner"
+      }
+    ]
+  }) }}
+  
+  <a href="logged-out" class="signout" style="float: right; margin-top: -30px;">Sign out</a>
+  
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+	
+
+<div class="govuk-grid-row ">
+	
+	<!-- left col -->
+	<div class="govuk-grid-column-two-thirds">
+	
+		<h1 class="govuk-heading-l">Select a provider</h1>
+		
+
+		{% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+		{{ govukRadios({
+		  idPrefix: "where-do-you-live",
+		  name: "where-do-you-live",
+		  items: [
+		    {
+		      value: "ProviderX",
+		      text: "Provider X  (UKPRN: 1234567)"
+		    },
+		    {
+		      value: "ProviderY",
+		      text: "Provider Y  (UKPRN: 9999999)"
+		    }
+		  ]
+		}) }}
+		
+
+		{% from "govuk/components/button/macro.njk" import govukButton %}
+			{{ govukButton({
+			  text: "Select",
+			  href: "results"
+			}) 
+		}}
+		
+		
+					
+	</div>
+	<!-- END left col -->
+	    
+</div>
+
+
+
+
+</div>
+{% endblock %}

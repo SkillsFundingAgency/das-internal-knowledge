@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Data Unlocker
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-width-container">
+	
+
+<div class="govuk-grid-row ">
+	
+	<!-- left col -->
+	<div class="govuk-grid-column-two-thirds">
+	
+		<h1 class="govuk-heading-l">Sign in</h1>
+		
+
+		<div class="govuk-form-group">
+		  <label class="govuk-label" for="full">User ID or email address</label>
+		  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+		</div>
+		
+		<div class="govuk-form-group">
+		  <label class="govuk-label" for="full">Password</label>
+		  <input class="govuk-input govuk-!-width-full" id="full" name="full" type="text">
+		</div> 
+
+		{% from "govuk/components/button/macro.njk" import govukButton %}
+			{{ govukButton({
+			  text: "Sign in",
+			  href: "search"
+			}) 
+		}}
+		
+		<h2 class="govuk-heading-m govuk-!-margin-top-3">Problems signing in?</h1>
+		
+		<p><a href="#">I forgot my password</a><br>
+		<a href="#">I don't have an account</a></p>
+		
+					
+	</div>
+	<!-- END left col -->
+	    
+</div>
+
+
+
+
+</div>
+{% endblock %}
