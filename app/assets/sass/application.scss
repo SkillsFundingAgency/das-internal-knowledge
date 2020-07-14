@@ -58,6 +58,10 @@ $govuk-assets-path: '/govuk/assets/';
 				.date {color:$govuk-secondary-text-colour;}
 			}
 			
+			.flag .govuk-details__summary:before {
+				color: #d4351c;
+			}
+			
 		}
 		
 	}
