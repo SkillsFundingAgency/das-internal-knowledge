@@ -42,18 +42,10 @@
   {# Set serviceName in config.js. #}
   {{ govukHeader({
     homepageUrl: "/",
-    serviceName: serviceName,
+    serviceName: "Name of our tool (tbc)",
     serviceUrl: "/",
     containerClasses: "govuk-width-container header-wrapper",
     navigation: [
-    {
-      href: "#1",
-      text: "Submit a request"
-    },
-    {
-      href: "#2",
-      text: "My requests"
-    },
     {
       href: "#4",
       text: "Sign out"
@@ -70,12 +62,7 @@
       meta: {
         items: [
           {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
-          },
-          {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data"
+            text: "Version: 1.0.0.0"
           }
         ]
       }
