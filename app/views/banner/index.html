@@ -1,0 +1,42 @@
+	{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block main %}
+<style>
+.govuk-header__container {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 10px;
+  }
+</style>
+
+
+<section class="app-section" style="margin-top: -10px; padding-top: 10px; padding-bottom: 0;">
+
+
+	<div class="govuk-width-container">
+			<div class="govuk-grid-column-three-thirds"> 
+				<div style="border: 5px solid #ffe114; padding: 20px; margin-top: 20px !important; margin-bottom: 20px;">
+				<p class="govuk-body-l govuk-!-font-weight-bold">
+          <strong>Coronavirus (COVID-19)</strong>: <a href="view-all" class="govuk-link" style="color: #1d70b8;">check how the apprenticeship service will support you</a>.<br>
+        </p>
+        <p class="govuk-!-margin-bottom-0"><strong>Are you an apprentice?</strong> There is a designated <a href="for-apprentice/view-all-apprentice">apprentice section</a> that may help you with information on Coronavirus (COVID-19).</p>
+				</div>
+			</div>
+	</div>
+</section>
+
+<div style="height: 300px;"></div>
+
+{% block content %}
+
+
+
+{% endblock %}
+
+
+      
+{% endblock %}
